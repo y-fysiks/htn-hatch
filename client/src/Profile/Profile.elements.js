@@ -27,4 +27,17 @@ export const BioHeader = styled.p`
   font-size: 30px;
   font-weight: bold;
   margin-top: 20px;
+  margin-bottom: 0px;
+`
+
+export const Bio = styled.p`
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 0px;
+`
+export const SkillsHeader = styled.p`
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 0px;
 `
