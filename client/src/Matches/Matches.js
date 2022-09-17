@@ -5,12 +5,12 @@ import {
   SampleDiv
 } from './Matches.elements'
 
-const Home = () => {
+const Matches = () => {
   return (
     <>
-      <SampleDiv>This is Matches</SampleDiv>
+      <SampleDiv>This is Matches </SampleDiv>
     </>
   )
 }
 
-export default Home
+export default Matches
