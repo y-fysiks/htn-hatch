@@ -9,7 +9,6 @@ const Home = () => {
   return (
     <>
       <SampleDiv>This is Home</SampleDiv>
-      
     </>
   )
 }
