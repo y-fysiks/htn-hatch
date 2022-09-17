@@ -16,15 +16,15 @@ import  { Navbar, Footer } from './Navbar/Navbar'
 function App() {
   return (
     <BrowserRouter>
-    <Navbar/>
-    <Routes>
-      <Route path="matches" element={<Matches />} />
-      <Route path="profile" element={<Profile />} />
-      <Route path="team" element={<Team />} />
-      <Route path="explore" element={<Explore />} />
-      <Route path="/" element={<Home />} />
-    </Routes>
-  </BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="matches" element={<Matches />} />
+        <Route path="profile" element={<Profile />} />
+        <Route path="team" element={<Team />} />
+        <Route path="explore" element={<Explore />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

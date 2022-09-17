@@ -2,15 +2,23 @@ import React from 'react'
 
 //Styled Components
 import {
-  SampleDiv
+  SampleDiv,
+  MarginDiv,
+  TeamNameP,
+  BioHeader
 } from './Profile.elements'
 
 const Profile = () => {
   return (
     <>
-      <SampleDiv>This is Profile </SampleDiv>
+      <MarginDiv></MarginDiv>
+      <SampleDiv>John Doe
+        <TeamNameP> Team X </TeamNameP>
+        <BioHeader> Personal Bio </BioHeader>
+      </SampleDiv>
+
     </>
   )
 }
 
-export default Profile;
+export default Profile

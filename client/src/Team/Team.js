@@ -2,13 +2,16 @@ import React from 'react'
 
 //Styled Components
 import {
-  SampleDiv
+  SampleDiv,
+  MarginDiv
 } from './Team.elements'
 
 const Team = () => {
   return (
     <>
-      <SampleDiv>This is Team </SampleDiv>
+      <MarginDiv></MarginDiv>
+      <SampleDiv>Team X</SampleDiv>
+      
     </>
   )
 }

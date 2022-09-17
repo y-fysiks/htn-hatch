@@ -2,15 +2,18 @@ import React from 'react'
 
 //Styled Components
 import {
-  SampleDiv
+  SampleDiv,
+  MarginDiv
 } from './Home.elements'
 
 const Home = () => {
   return (
     <>
-      <SampleDiv>This is Home</SampleDiv>
+      <MarginDiv></MarginDiv>
+      <SampleDiv></SampleDiv>
+      
     </>
   )
 }
 
-export default Home;
+export default Home
