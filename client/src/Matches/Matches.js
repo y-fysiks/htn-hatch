@@ -8,9 +8,9 @@ import {
 const Matches = () => {
   return (
     <>
-      <SampleDiv>This is Matches </SampleDiv>
+      <SampleDiv>This is Match </SampleDiv>
     </>
   )
 }
 
-export default Matches
+export default Matches;
