@@ -13,6 +13,7 @@ export const SampleDiv = styled.div`
   margin-top: 50px;
   border-radius: 20px;
   padding: 40px;
+  box-shadow: 13px -13px #CCCCCC;
 `
 export const MarginDiv = styled.div`
   height: 80px;
