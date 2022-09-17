@@ -2,14 +2,13 @@ import { VscGlobe } from 'react-icons/vsc'
 import { BsHeartFill, BsPersonFill } from 'react-icons/bs'
 import { HiUserGroup } from 'react-icons/hi'
 
-import React, { useState } from 'react';
+import React from 'react';
 //Styled Components
 import { 
   Nav, 
   NavbarContainer, 
   NavLogo, 
   Img,
-  NavMenu, 
   NavItem, 
   NavLinks
 } from './Navbar.elements'
@@ -47,7 +46,7 @@ export const Navbar = () => {
               <VscGlobe size={50}/>
             </NavLinks>
           </NavItem>
-
+          
       </NavbarContainer>
     </Nav>
   );

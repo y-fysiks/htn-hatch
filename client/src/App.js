@@ -10,7 +10,7 @@ import Matches from './Matches/Matches';
 import Profile from './Profile/Profile';
 import Team from './Team/Team';
 import Explore from './Explore/Explore';
-import  { Navbar, Footer } from './Navbar/Navbar'
+import  { Navbar } from './Navbar/Navbar'
 
 
 function App() {
