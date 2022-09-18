@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 
 
 export const Nav = styled.nav`
-  background:linear-gradient(to right, #256EFF, #9BC4CB);
-  color: #FFF;
   height: 80px;
   display: flex;
   justify-content: center;

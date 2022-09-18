@@ -2,6 +2,8 @@ import React from 'react'
 import { HiUserGroup } from 'react-icons/hi'
 
 
+import  { Navbar } from '../Navbar/Navbar'
+
 //Styled Components
 import {
   HeaderDiv,
@@ -15,6 +17,7 @@ const Team = () => {
 
   return (
     <>
+      <Navbar></Navbar>
       <MarginDiv></MarginDiv>
       <HeaderDiv>
         <HiUserGroup size={70}/>

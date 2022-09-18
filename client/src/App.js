@@ -6,7 +6,6 @@ import Matches from './Matches/Matches';
 import Profile from './Profile/Profile';
 import Team from './Team/Team';
 import Explore from './Explore/Explore';
-import  { Navbar } from './Navbar/Navbar'
 
 export const axios = require('axios');
 export const uuid = 1;
@@ -52,7 +51,6 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar/>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="explore" element={<Explore />} />

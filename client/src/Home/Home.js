@@ -2,15 +2,32 @@ import React from 'react'
 
 //Styled Components
 import {
-  SampleDiv,
-  MarginDiv
+  MarginDiv,
+  MainText,
+  GetStartedLink,
+  GetStartedButton,
+  HomeContainer
 } from './Home.elements'
+
+import  { HomeNavBar } from '../HomeNavBar/HomeNavBar'
+
 
 const Home = () => {
   return (
     <>
+    <HomeContainer>
+      <HomeNavBar></HomeNavBar>
       <MarginDiv></MarginDiv>
-      <SampleDiv></SampleDiv>
+
+      <MainText>Get Matched with your dream Hackathon Team</MainText>
+        <GetStartedLink to='/profile'>
+        <GetStartedButton>
+          Get Started
+        </GetStartedButton>
+      </GetStartedLink>
+    </HomeContainer>
+
+
       
     </>
   )

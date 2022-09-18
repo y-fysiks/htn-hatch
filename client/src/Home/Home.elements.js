@@ -1,18 +1,40 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-
-export const SampleDiv = styled.div`
-  color: black;
-  background-color: #F3F3F0;
-  max-width: 450px;
-  min-height: 550px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  border-radius: 20px;
-  padding: 40px;
-`
 export const MarginDiv = styled.div`
   height: 80px;
 `
 
+export const MainText = styled.h1`
+  color: black;
+  max-width: 750px;
+  margin-left: 10%;
+  margin-top: 100px;
+  padding: 40px;
+  font-size: 70px;
+`
+
+export const GetStartedLink = styled(Link)` 
+  text-decoration: none;
+`
+
+export const GetStartedButton = styled.button`
+  margin-left: 180px;
+  color: #fff;
+  background-color: black;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 35px;
+  transition: background-color 0.1s;
+  border-radius: 20px;
+  border: none;
+
+  &:hover {
+    background-color: grey;
+  }
+`
+
+export const HomeContainer = styled.div`
+  background:linear-gradient(#256EFF, #9BC4CB);
+  height: 100vh;
+`

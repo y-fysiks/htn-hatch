@@ -2,6 +2,8 @@ import React from 'react'
 import { user } from '../App';
 import { team } from '../App';
 
+import  { Navbar } from '../Navbar/Navbar'
+
 //Styled Components
 import {
   SampleDiv,
@@ -21,6 +23,7 @@ const Profile = () => {
 
   return (
     <>
+      <Navbar></Navbar>
       <MarginDiv></MarginDiv>
       <SampleDiv> { user.name }
         <Body> { team.name } </Body>

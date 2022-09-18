@@ -12,14 +12,14 @@ import {
   NavItem, 
   NavLinks,
   NavIconContainer
-} from './Navbar.elements'
+} from './HomeNavBar.elements'
 //Images
 
 
 import sampleLogo from '../images/sampleLogo.png'
 
 
-export const Navbar = () => {
+export const HomeNavBar = () => {
 
   return (
     <Nav>
@@ -59,4 +59,4 @@ export const Navbar = () => {
   );
 };
 
-export default Navbar
+export default HomeNavBar
