@@ -64,6 +64,7 @@ export const RejectButton = styled.button`
 
   &:hover {
     background-color: #FF0A0A;
+    cursor: pointer;
   }
 
 `
@@ -78,6 +79,7 @@ export const AcceptButton = styled.button`
 
   &:hover {
     background-color: #0156FF;
+    cursor: pointer;
   }
 `
 
