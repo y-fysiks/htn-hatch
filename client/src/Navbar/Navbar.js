@@ -28,13 +28,13 @@ export const Navbar = () => {
         </NavLogo>
 
           <NavItem>
-            <NavLinks to='/matches'>
-              <BsHeartFill size={40}/>
+            <NavLinks to='/explore'>
+              <VscGlobe size={50}/>
             </NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to='/profile'>
-              <BsPersonFill size={50}/>
+            <NavLinks to='/matches'>
+              <BsHeartFill size={40}/>
             </NavLinks>
           </NavItem>
           <NavItem>
@@ -43,10 +43,12 @@ export const Navbar = () => {
             </NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to='/explore'>
-              <VscGlobe size={50}/>
+            <NavLinks to='/profile'>
+              <BsPersonFill size={50}/>
             </NavLinks>
           </NavItem>
+ 
+
           
       </NavbarContainer>
     </Nav>

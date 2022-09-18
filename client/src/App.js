@@ -15,10 +15,10 @@ function App() {
       <Navbar/>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="matches" element={<Matches />} />
-        <Route path="profile" element={<Profile />} />
-        <Route path="team" element={<Team />} />
         <Route path="explore" element={<Explore />} />
+        <Route path="matches" element={<Matches />} />
+        <Route path="team" element={<Team />} />
+        <Route path="profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );
