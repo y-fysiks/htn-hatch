@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "https://y-fysiks.github.io/htn-hatch/",
+  "homepage": "https://y-fysiks.github.io",
 
   "private": true,
   "dependencies": {
