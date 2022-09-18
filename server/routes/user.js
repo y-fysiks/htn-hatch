@@ -16,6 +16,20 @@ router.route("/:id").get((req, res) => {
     db.query(`SELECT * FROM users WHERE id = ${req.params.id}`).then(response => {
         if(response) res.json(response.rows[0]);
     });
+})
+.post((req, res) => {
+    db.query('INSERT INTO users (id, name, biography, skills, team, linkedin, username, password) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)', [req.params.id, req.params.name, req.params.biography, req.params.skills, req.params.team, req.params.linkedin, req.params.username, req.params.password]).then(response => {
+        if(response) res.json(response.rows[0]);
+    });
+    //also send a post request to create a new team if the user is creating a new team
+    db.query(`INSERT INTO teams (name, description, seeking, accepted, declined) VALUES ('${req.params.name}', '', '', '', '')`).then(response => {
+        if(response) res.json(response.rows[0]);
+    });
+})
+.update((req, res) => {
+    db.query(`UPDATE users SET name = '${req.params.name}', biography = '${req.params.biography}', skills = '${req.params.skills}', team = '${req.params.team}', linkedin = '${req.params.linkedin}', username = '${req.params.username}', password = '${req.params.password}' WHERE id = ${req.params.id}`).then(response => {
+        if(response) res.json(response.rows[0]);
+    });
 });
 
 // export router
