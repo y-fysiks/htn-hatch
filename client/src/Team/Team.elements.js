@@ -6,11 +6,19 @@ export const HeaderDiv = styled.div`
   margin-left: 80px;
   margin-right: 80px;
   margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  padding: none;
 `
 
 export const HeaderIcon = styled.img`
   width: 100px;
   height: 100px;
+  padding: none;
+`
+
+export const TeamInfoDiv = styled.div`
+  margin-left: 160px;
 `
 
 export const HeaderText = styled.h1`
@@ -42,6 +50,27 @@ export const Header = styled.p`
 export const Body = styled.p`
   font-size: 20px;
   font-weight: normal;
-  margin-top: 0px;
+  margin-top: -50px;
   font-family: 'Verdana';
+`
+
+export const TeamDiv = styled.div`
+  width: 90%;
+  margin: auto;
+`
+
+export const TeamName = styled.h1`
+  font-size: 50px;
+  font-family: Righteous;
+`
+
+export const Subheader = styled.h2`
+  font-size: 30px;
+  font-family: Righteous;
+
+`
+
+export const SmallText = styled.p`
+  font-size: 20px;
+
 `

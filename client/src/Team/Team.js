@@ -10,6 +10,11 @@ import {
   HeaderDiv,
   HeaderText,
   MarginDiv,
+  TeamDiv,
+  TeamName,
+  Subheader,
+  SmallText,
+  TeamInfoDiv,
   Header,
   Body
 } from './Team.elements'
