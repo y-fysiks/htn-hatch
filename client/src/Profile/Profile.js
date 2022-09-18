@@ -33,12 +33,12 @@ const Profile = () => {
   });
 
   useEffect(() => {
-    axios.get("http://localhost:3001/user/" + userID).then(res => setUser(res.data)).catch(err => console.log(err));
-  });
+    axios.get("http://localhost:3001/user/" + userID).then(res => {
+      setUser(res.data);
+      axios.get("http://localhost:3001/team/" + user.team).then(res => console.log(user.team)).catch(err => console.log(err));
+    }).catch(err => console.log(err));
+  }, []);
 
-  useEffect(() => {
-    axios.get("http://localhost:3001/team/" + user.team).then(res => setTeam(res.data)).catch(err => console.log(err));
-  });
 
   const skillsF = [];
   for (let i = 0; i < user.skills.length; i++) {

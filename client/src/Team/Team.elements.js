@@ -17,6 +17,8 @@ export const HeaderText = styled.h1`
   font-family: 'Righteous';
   font-size: 50px;
   font-weight: bold;
+  display: inline-block;
+  margin-left: 80px;
 `
 
 export const MarginDiv = styled.div`
