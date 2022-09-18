@@ -53,8 +53,15 @@ export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
-  text-align: center;
-  
+  text-align: center; 
+`
+
+export const LogoText = styled.h1`
+  font-family: 'Righteous';
+  margin-left: 92px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 40px;
 `
 
 export const NavItem = styled.li`
