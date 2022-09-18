@@ -16,9 +16,10 @@ router.route("/:id").get((req, res) => {
     db.query(`SELECT * FROM users WHERE id = ${req.params.id}`).then(response => {
         if(response) res.json(response.rows[0]);
     });
-})
-.post((req, res) => {
-    db.query('INSERT INTO users (id, name, biography, skills, team, linkedin, username, password) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)', [req.params.id, req.params.name, req.params.biography, req.params.skills, req.params.team, req.params.linkedin, req.params.username, req.params.password]).then(response => {
+});
+
+router.route().post((req, res) => {
+    db.query('INSERT INTO users VALUES ($1, $2, ARRAY$3, $4, $5, $6, $7, $8)', [req.params.id, req.params.name, req.params.skills, req.params.biography, req.params.team, req.params.linkedin, req.params.username, req.params.password]).then(response => {
         if(response) res.json(response.rows[0]);
     });
     //also send a post request to create a new team if the user is creating a new team

@@ -27,6 +27,7 @@ const Profile = () => {
     id: 0,
     name: "",
     description: "",
+    members: [],
     seeking: [],
     accepted: [],
     declined: []
