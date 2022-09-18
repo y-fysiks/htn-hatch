@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const HeaderDiv = styled.div`
   margin-top: 100px;
-  margin-left: 80px;
+  margin-left: 160px;
   margin-right: 80px;
   margin-bottom: 100px;
   display: flex;
@@ -27,6 +27,8 @@ export const HeaderText = styled.h1`
   font-weight: bold;
   display: inline-block;
   margin-left: 80px;
+  padding: 0 0 0 10px;
+  margin: 0;
 `
 
 export const MarginDiv = styled.div`
@@ -62,6 +64,7 @@ export const TeamDiv = styled.div`
 export const TeamName = styled.h1`
   font-size: 50px;
   font-family: Righteous;
+
 `
 
 export const Subheader = styled.h2`
