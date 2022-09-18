@@ -18,16 +18,16 @@ router.route("/:id").get((req, res) => {
     });
 })
 .delete((req, res) => {
-    db.query(`DELETE FROM teams WHERE id = ${req.params.id}`).then(response => {
+    db.query(`DELETE * FROM teams WHERE id = ${req.params.id}`).then(response => {
         if(response) res.json(response.rows[0]);
     });
 });
-
-router.route().post((req, res) => {
+/*
+router.route("").post((req, res) => {
     db.query('INSERT INTO teams VALUES ($1, $2, $3, ARRAY$4, ARRAY$5, ARRAY$6, ARRAY$7)', [req.params.id, req.params.name, req.params.description, req.params.members, req.params.seeking, req.params.accepted, req.params.declined]).then(response => {
         if(response) res.json(response.rows[0]);
     });
-});
+});*/
 
 // export router
 module.exports = router;

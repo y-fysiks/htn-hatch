@@ -42,7 +42,7 @@ export const SecondaryDiv2 = styled.div`
   padding: 40px;
   box-shadow: 13px -13px #CCCCCC;
   float: left;
-  margin-left: 100px;
+  margin-left: 50px;
 `
 export const SecondaryDiv3 = styled.div`
   font-family: 'Righteous';
@@ -58,7 +58,7 @@ export const SecondaryDiv3 = styled.div`
   padding: 40px;
   box-shadow: 13px -13px #CCCCCC;
   float: right;
-  margin-right: 100px;
+  margin-right: 50px;
   `
 
 export const MarginDiv = styled.div`
