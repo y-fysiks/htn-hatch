@@ -6,12 +6,15 @@ export const MarginDiv = styled.div`
 `
 
 export const MainText = styled.h1`
-  color: black;
-  max-width: 750px;
+  font-family: 'Reem Kufi', sans-serif;
+  color: #FFF;
+  font-weight: normal;
+  max-width: 820px;
   margin-left: 10%;
   margin-top: 100px;
   padding: 40px;
-  font-size: 70px;
+  font-size: 80px;
+  line-height: 1.3;
 `
 
 export const GetStartedLink = styled(Link)` 
@@ -19,6 +22,7 @@ export const GetStartedLink = styled(Link)`
 `
 
 export const GetStartedButton = styled.button`
+  font-family: 'Righteous';
   margin-left: 180px;
   color: #fff;
   background-color: black;
@@ -26,7 +30,7 @@ export const GetStartedButton = styled.button`
   font-size: 20px;
   padding: 10px 35px;
   transition: background-color 0.1s;
-  border-radius: 20px;
+  border-radius: 25px;
   border: none;
 
   &:hover {
