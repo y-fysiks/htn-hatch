@@ -60,7 +60,7 @@ const Profile = () => {
         <Header> Skills </Header>
         <Body> {skillsF} </Body>
         <Header> Contact Information </Header>
-        <Body> { user.linkedin } </Body>
+        <Body> <a href={ user.linkedin }> { user.linkedin } </a> </Body>
       </SampleDiv>
     </>
   )
