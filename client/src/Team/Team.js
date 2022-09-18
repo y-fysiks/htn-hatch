@@ -1,16 +1,25 @@
 import React from 'react'
+import { HiUserGroup } from 'react-icons/hi'
+
 
 //Styled Components
 import {
-  SampleDiv,
-  MarginDiv
+  HeaderDiv,
+  HeaderText,
+  MarginDiv,
+  Header,
+  Body
 } from './Team.elements'
 
 const Team = () => {
+
   return (
     <>
       <MarginDiv></MarginDiv>
-      <SampleDiv>Team X</SampleDiv>
+      <HeaderDiv>
+        <HiUserGroup size={70}/>
+        <HeaderText> Your Team </HeaderText>
+      </HeaderDiv>
       
     </>
   )

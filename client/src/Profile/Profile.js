@@ -1,24 +1,35 @@
 import React from 'react'
+import { user } from '../App';
+import { team } from '../App';
 
 //Styled Components
 import {
   SampleDiv,
   MarginDiv,
-  TeamNameP,
-  BioHeader,
-  Bio,
-  SkillsHeader
+  Header,
+  Body,
 } from './Profile.elements'
 
 const Profile = () => {
+  const skillsF = [];
+  for (let i = 0; i < user.skills.length; i++) {
+    skillsF.push(user.skills[i]);
+    if (i < user.skills.length - 1){
+      skillsF.push(', ');
+    }
+  }
+
   return (
     <>
       <MarginDiv></MarginDiv>
-      <SampleDiv>John Doe
-        <TeamNameP> Team X </TeamNameP>
-        <BioHeader> Personal Bio </BioHeader>
-        <Bio> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </Bio>
-        <SkillsHeader> Skills </SkillsHeader>
+      <SampleDiv> { user.name }
+        <Body> { team.name } </Body>
+        <Header> Personal Bio </Header>
+        <Body> { user.bio } </Body>
+        <Header> Skills </Header>
+        <Body> {skillsF} </Body>
+        <Header> Contact Information </Header>
+        <Body> { user.linkedIn } </Body>
       </SampleDiv>
     </>
   )

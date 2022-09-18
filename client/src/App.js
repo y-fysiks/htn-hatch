@@ -8,8 +8,48 @@ import Team from './Team/Team';
 import Explore from './Explore/Explore';
 import  { Navbar } from './Navbar/Navbar'
 
+export const axios = require('axios');
+export const uuid = 1;
+export let user;
+export let team;
 
 function App() {
+  //get the user's profile
+  axios.get('/user', {
+    params: {
+      ID: uuid
+    }
+  })
+  .then(function (response) {
+    console.log(response);
+    user = response;
+  })
+  .catch(function (error) {
+    console.log(error);
+  })
+  .then(function () {
+    // always executed
+  });
+  user = {name: 'John Doe', teamID: '1', skills: ['Python', 'Java', 'C++'], bio: 'I am a software engineer at Google', linkedIn: 'a'};
+
+  //get the user's team
+  axios.get('/team', {
+    params: {
+      ID: user.teamID
+    }
+  })
+  .then(function (response) {
+    console.log(response);
+    team = response;
+  })
+  .catch(function (error) {
+    console.log(error);
+  })
+  .then(function () {
+    // always executed
+  });
+  team = {name: 'Team X'};
+
   return (
     <BrowserRouter>
       <Navbar/>

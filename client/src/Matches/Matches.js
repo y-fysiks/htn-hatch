@@ -2,15 +2,18 @@ import React from 'react'
 
 //Styled Components
 import {
-  SampleDiv
+  MainDiv,
+  MarginDiv,
 } from './Matches.elements'
 
 const Matches = () => {
+  
   return (
     <>
-      <SampleDiv>
-        hello
-      </SampleDiv>
+      <MarginDiv></MarginDiv>
+      <MainDiv> Your Matches
+
+      </MainDiv>
     </>
   )
 }
