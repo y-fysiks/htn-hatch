@@ -9,8 +9,12 @@ import {
   HeaderDiv,
   HeaderText,
   MarginDiv,
-  Header,
-  Body
+  TeamDiv,
+  TeamName,
+  Subheader,
+  SmallText,
+  TeamInfoDiv
+
 } from './Team.elements'
 
 const Team = () => {
@@ -19,10 +23,27 @@ const Team = () => {
     <>
       <Navbar></Navbar>
       <MarginDiv></MarginDiv>
-      <HeaderDiv>
-        <HiUserGroup size={70}/>
-        <HeaderText> Your Team </HeaderText>
-      </HeaderDiv>
+      <TeamDiv>
+        <HeaderDiv>
+          <HiUserGroup size={60} style={{ color: "#256EFF"}}/>
+          <HeaderText> Your Team </HeaderText>
+        </HeaderDiv>
+        
+        <TeamInfoDiv>
+          <TeamName> Glorious Giraffes</TeamName>
+          <Subheader>Members</Subheader>
+          <SmallText>Bob, Sally</SmallText>
+          <Subheader>Skills</Subheader>
+          <SmallText>Neural Networks, SQL, Data Modelling</SmallText>
+          <Subheader>Project Description</Subheader>
+          <SmallText>Looking to build something involving ML and/or drones.</SmallText>
+        </TeamInfoDiv>
+
+      </TeamDiv>
+
+
+
+
       
     </>
   )
