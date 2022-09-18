@@ -7,7 +7,6 @@ import Profile from './Profile/Profile';
 import Team from './Team/Team';
 import Explore from './Explore/Explore';
 import  { Navbar } from './Navbar/Navbar'
-const { Client } = import("pg");
 
 
 function App() {
