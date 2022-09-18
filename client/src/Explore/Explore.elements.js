@@ -1,5 +1,11 @@
 import styled from 'styled-components'
 
+export const Text = styled.p`
+  font-family: 'Righteous';
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+`
 
 export const Card = styled.div`
   color: black;

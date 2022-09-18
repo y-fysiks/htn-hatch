@@ -15,7 +15,8 @@ import {
   RejectButton,
   AcceptButton,
   Buttons,
-  InfoContainer
+  InfoContainer,
+  Text
 } from './Explore.elements'
 
 const Explore = () => {
@@ -23,6 +24,8 @@ const Explore = () => {
     <>
       <Navbar></Navbar>
       <MarginDiv></MarginDiv>
+      <Text>Explore</Text>
+
       <Card>
         <InfoContainer>
           <TeamName>Awesome Anteaters</TeamName>
