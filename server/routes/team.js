@@ -17,21 +17,11 @@ router.route("/:id").get((req, res) => {
         if(response) res.json(response.rows[0]);
     });
 })
-.update((req, res) => {
-    db.query(`UPDATE teams SET name = '${req.params.name}', description = '${req.params.description}', seeking = '${req.params.seeking}', accepted = '${req.params.accepted}', declined = '${req.params.declined}' WHERE id = ${req.params.id}`).then(response => {
-        if(response) res.json(response.rows[0]);
-    });
-})
 .delete((req, res) => {
     db.query(`DELETE FROM teams WHERE id = ${req.params.id}`).then(response => {
         if(response) res.json(response.rows[0]);
     });
-})
-.merge((req, res) => {
-    
-    
 });
-
 
 // export router
 module.exports = router;

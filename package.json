@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@syncfusion/ej2-react-dropdowns": "^20.2.48",
+    "react-horizontal-scrolling-menu": "^3.2.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.4.0"
   }

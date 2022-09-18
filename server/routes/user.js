@@ -25,11 +25,6 @@ router.route("/:id").get((req, res) => {
     db.query(`INSERT INTO teams (name, description, seeking, accepted, declined) VALUES ('${req.params.name}', '', '', '', '')`).then(response => {
         if(response) res.json(response.rows[0]);
     });
-})
-.update((req, res) => {
-    db.query(`UPDATE users SET name = '${req.params.name}', biography = '${req.params.biography}', skills = '${req.params.skills}', team = '${req.params.team}', linkedin = '${req.params.linkedin}', username = '${req.params.username}', password = '${req.params.password}' WHERE id = ${req.params.id}`).then(response => {
-        if(response) res.json(response.rows[0]);
-    });
 });
 
 // export router
