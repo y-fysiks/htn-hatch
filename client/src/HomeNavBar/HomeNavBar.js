@@ -8,7 +8,7 @@ import {
   Nav, 
   NavbarContainer, 
   NavLogo, 
-  LogoText,
+  Img,
   NavItem, 
   NavLinks,
   NavIconContainer
@@ -16,7 +16,7 @@ import {
 //Images
 
 
-// import sampleLogo from '../images/sampleLogo.png'
+import HatchLogo from '../images/HatchLogo.png'
 
 
 export const HomeNavBar = () => {
@@ -24,8 +24,8 @@ export const HomeNavBar = () => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to='/'>
-          <LogoText>Hatch</LogoText>
+      <NavLogo to='/'>
+          <Img src={HatchLogo} ></Img>
         </NavLogo>
 
         <NavIconContainer>
